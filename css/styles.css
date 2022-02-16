@@ -1,0 +1,210 @@
+body {
+  font-family: "Montserrat;"
+}
+
+.title {
+  color: #fff;
+  /* background-color: pink; */
+  background: #c94b4b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container-fluid {
+  padding: 3% 10% 0 10%;
+}
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  padding-top: 10px;
+  font-family: "Montserrat-Bold";
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* .phone-logo {
+  height: 35px;
+} */
+
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+/* .title-image {
+  margin-right: 0;
+} */
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+.testimonial {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-image {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* .carousel-item {
+    height: 500px;
+} */
+
+.presses {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-image {
+  width: 15%;
+  padding: 20px 20px 50px;
+}
+
+/* .img-cl {
+  width: 15%;
+  margin: 20px 20px 50px;
+} */
+
+/* .card {
+    background-color: #ffffff;
+    border-radius: 10px
+} */
+
+.price {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.card {
+    width: 400px;
+    padding: 60px 50px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2)
+}
+
+.card h3 {
+    color: #111;
+    margin-bottom: 50px;
+    border-left: 5px solid red;
+    padding-left: 10px;
+    line-height: 1em
+}
+
+.inputbox {
+    margin-bottom: 50px
+}
+
+.inputbox input {
+    position: absolute;
+    width: 300px;
+    background: transparent
+}
+
+.inputbox input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #e54b38;
+    outline: 0;
+    box-shadow: none
+}
+
+.inputbox span {
+    position: relative;
+    top: 7px;
+    left: 1px;
+    padding-left: 10px;
+    display: inline-block;
+    transition: 0.5s
+}
+
+.inputbox input:focus~span {
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px
+}
+
+.inputbox input:valid~span {
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px
+}
+
+.row1 {
+  margin-left: 33%;
+}
+
+.downloads {
+  text-align: center;
+  background-color: #e54b38;
+  color: #fff;
+}
+
+.foot {
+  text-align: center;
+
+}
