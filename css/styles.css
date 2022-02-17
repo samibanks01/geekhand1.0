@@ -197,3 +197,14 @@ p {
   text-align: center;
 
 }
+
+@media (max-width: 1028px) {
+
+  .title {
+    text-align: center;
+  }
+
+  .row1 {
+    margin: 0 30% 0 30%;
+  }
+}
