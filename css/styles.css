@@ -180,17 +180,20 @@ p {
     font-size: 12px
 }
 
-.row1 {
-  margin-top: 0;
-  margin-right: 20%;
-  margin-bottom: 0;
-  margin-left:40%;
-}
-
 .downloads {
   text-align: center;
   background-color: #e54b38;
   color: #fff;
+  padding: 7% 15%;
+}
+
+.download-title {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.download-button2 {
+  margin: 7px 15px;
 }
 
 .foot {
