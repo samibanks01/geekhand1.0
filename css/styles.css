@@ -64,7 +64,10 @@ p {
   height: 35px;
 } */
 
-.download-button{
+.download-button {
+  font-size: 28px;
+  border-radius: 10px;
+  width: 30%;
   margin: 5% 3% 5% 0;
 }
 
@@ -193,6 +196,9 @@ p {
 }
 
 .download-button2 {
+  font-size: 28px;
+  border-raduis: 10px;
+  width: 20%;
   margin: 7px 15px;
 }
 
