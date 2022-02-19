@@ -198,7 +198,7 @@ p {
 .download-button2 {
   font-size: 28px;
   border-radius: 10px;
-  width: 30%;
+  width: 25%;
   margin: 7px 15px;
 }
 
@@ -216,4 +216,11 @@ p {
   .row1 {
     margin: 0 30% 0 30%;
   }
+  
+  .download-button2 {
+  font-size: 28px;
+  border-radius: 10px;
+  width: 33%;
+  margin: 7px 15px;
+}
 }
