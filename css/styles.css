@@ -2,6 +2,35 @@ body {
   font-family: "Montserrat;"
 }
 
+h1 {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h3 {
+  padding-top: 10px;
+  font-family: "Montserrat-Black";
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.phone-logo {
+  height: 35px;
+  padding-right: 5px;
+}
+
 .title {
   color: #fff;
   /* background-color: pink; */
@@ -36,36 +65,8 @@ body {
   font-family: "Montserrat";
 }
 
-h1 {
-  font-family: "Montserrat-Black";
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-h2 {
-  font-family: "Montserrat";
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-h3 {
-  padding-top: 10px;
-  font-family: "Montserrat-Black";
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-p {
-  color: #8f8f8f;
-}
-
-.phone-logo {
-  height: 35px;
-  padding-right: 5px;
-}
-
 .download-button {
+  /* padding: 10px 15px; */
   font-size: 28px;
   border-radius: 10px;
   width: 30%;
@@ -74,7 +75,7 @@ p {
 
 .title-image {
   padding: 0 20%;
-} 
+}
 
 #features {
   padding: 7% 15%;
@@ -111,7 +112,7 @@ p {
 .carousel-item {
   padding: 7% 15%;
 }
- 
+
 .presses {
   background-color: #ef8172;
   text-align: center;
@@ -131,7 +132,12 @@ p {
   background: white;
 }
 
-.card {
+.news2 {
+  font-size: 3rem;
+  font-family: Montserrat Black;
+}
+
+/* .card {
     width: 400px;
     padding: 60px 50px;
     position: relative;
@@ -182,7 +188,7 @@ p {
 .inputbox input:valid~span {
     transform: translateX(-10px) translateY(-32px);
     font-size: 12px
-}
+} */
 
 .downloads {
   text-align: center;
@@ -192,20 +198,26 @@ p {
 }
 
 .download-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
 .download-button2 {
   font-size: 28px;
   border-radius: 10px;
-  width: 33%;
+  width: 30%;
+  margin: 7px 15px 7px 0px;
+}
+
+.download-button3 {
+  font-size: 28px;
+  border-radius: 10px;
+  width: 20%;
   margin: 7px 15px;
 }
 
 .foot {
   text-align: center;
-
 }
 
 @media (max-width: 1028px) {
@@ -214,14 +226,20 @@ p {
     text-align: center;
   }
 
-  .row1 {
-    margin: 0 30% 0 30%;
+  h1 {
+    font-family: "Montserrat-Black";
+    font-size: 4.5rem;
+    line-height: 1.5;
+    font-weight: bold;
   }
-  
+
+  /* .download-button{
+    margin: 5% 3% 5% 0;
+  }
+
+
   .download-button2 {
-  font-size: 28px;
-  border-radius: 10px;
-  width: 33%;
-  margin: 7px 15px;
-}
+    margin: 7px 15px;
+  } */
+
 }
