@@ -1,202 +1,286 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>geekhand</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="utf-8">
-  <title>geekhand</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  
-  <meta name="description" content="Geekhand bridges the gap between technical experts and end users. This is a sought after service that is scarcely catered to.">
-   
-  <meta property="og:image" content="images/geekhand.png">
-  <meta property="og:description" content="Geekhand bridges the gap between technical experts and end users. This is a sought after service that is scarcely catered to.">
-  <meta property="og:title" content="Geekhand">
+    <meta
+      name="description"
+      content="Geekhand bridges the gap between technical experts and end users. This is a sought after service that is scarcely catered to."
+    />
 
+    <meta property="og:image" content="images/geekhand.png" />
+    <meta
+      property="og:description"
+      content="Geekhand bridges the gap between technical experts and end users. This is a sought after service that is scarcely catered to."
+    />
+    <meta property="og:title" content="Geekhand" />
 
-  <!--bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+    <!--bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
-  <!-- Fonts Awesome -->
-  <script src="https://kit.fontawesome.com/4fb35b1106.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4fb35b1106.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <section id="titles">
+      <div class="title">
+        <div class="container-fluid">
+          <!-- Nav Bar -->
+          <!-- bootstrap nav -->
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <img class="phone-logo" src="images/geekhand.png" alt="site-logo" />
+            <a class="navbar-brand" href=""> geekhand </a>
 
-  <section id="titles">
-    <div class="title">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="container-fluid">
-        <!-- Nav Bar -->
-        <!-- bootstrap nav -->
-        <nav class="navbar navbar-dark navbar-expand-lg">
-          <img class="phone-logo" src="images/geekhand.png" alt="site-logo">
-          <a class="navbar-brand" href=""> geekhand </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                  <li class="nav-item"><a href="#news" class="nav-link">Newsletter</a></li>
-                  <li class="nav-item"><a href="#cta" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                  <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#news" class="nav-link">Newsletter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#cta" class="nav-link">Contact</a>
+                </li>
               </ul>
+            </div>
+          </nav>
 
-          </div>
-        </nav>
-
-
-        <!-- Title -->
-        <div class="row">
-          <div class="col-lg-6">
-            <h1>Meet the best certified techical experts you certainly deserve.</h1>
-            <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-solid fa-phone"></i> Call now </button>
-            <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-solid fa-comment"></i> Text now </button>
-          </div>
-          <div class="col-lg-6">
-            <img class="title-image" src="images/handphone5.png" alt="iphone-hand">
+          <!-- Title -->
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>
+                Meet the best certified techical experts you certainly deserve.
+              </h1>
+              <button type="button" class="btn btn-dark btn-lg download-button">
+                <i class="fa-solid fa-phone"></i> Call now
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-light btn-lg download-button"
+              >
+                <i class="fa-solid fa-comment"></i> Text now
+              </button>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="title-image"
+                src="images/handphone5.png"
+                alt="iphone-hand"
+              />
+            </div>
           </div>
         </div>
-
-
       </div>
+    </section>
 
+    <!-- Features -->
 
-    </div>
-
-
-  </section>
-
-
-  <!-- Features -->
-
-  <section id="features">
-    <div class="row">
-      <div class="feature-box col-lg-4">
-        <i class="icon fa-solid fa-circle-check fa-4x"></i>
-        <h3>Tested and Trusted.</h3>
-        <p>We are widely recognized both locally and internationally.</p>
-      </div>
-      <div class="feature-box col-lg-4">
-        <i class="icon fa-solid fa-circle-user fa-4x"></i>
-        <h3>Elite Clientele</h3>
-        <p>Our client belong in the top 500 rank!</p>
-      </div>
-      <div class="feature-box col-lg-4">
-        <i class="icon fa-solid fa-face-smile fa-4x"></i>
-        <h3>Guaranteed satisfaction.</h3>
-        <p>Fix and troubleshoot your technological complaints or your money back.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Testimonials -->
-
-  <section>
-    <div class="testimonial">
-
-      <div id="testimonials" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h2>I have reduced the probabilty of getting an auto car accident while trying to get the right technician for my computer to 1.99%</h2>
-            <img class="testimonial-image" src="images/lady-img.jpg" class="d-block w-100" alt="apple-img">
-            <em>Galvin, Lagos</em>
-          </div>
-          <div class="carousel-item">
-            <h2>Thanks geekhand. You have come to terms with my greatest technical needs. Gracias!</h2>
-            <img class="testimonial-image" src="images/lady-img.jpg" class="d-block w-100" alt="apple-img">
-            <em>Elizabeth, Lagos</em>
-          </div>
-
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-circle-check fa-4x"></i>
+          <h3>Tested and Trusted.</h3>
+          <p>We are widely recognized both locally and internationally.</p>
         </div>
-        <a class="carousel-control-prev" data-bs-target="#testimonials" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" data-bs-target="#testimonials" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-circle-user fa-4x"></i>
+          <h3>Elite Clientele</h3>
+          <p>Our client belong in the top 500 rank!</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-face-smile fa-4x"></i>
+          <h3>Guaranteed satisfaction.</h3>
+          <p>
+            Fix and troubleshoot your technological complaints or your money
+            back.
+          </p>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <!-- Testimonials -->
 
+    <section>
+      <div class="testimonial">
+        <div
+          id="testimonials"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-interval="1000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2>
+                I have reduced the probabilty of getting an auto car accident
+                while trying to get the right technician for my computer to
+                1.99%
+              </h2>
+              <img
+                class="testimonial-image"
+                src="images/lady-img.jpg"
+                class="d-block w-100"
+                alt="apple-img"
+              />
+              <em>Galvin, Lagos</em>
+            </div>
+            <div class="carousel-item">
+              <h2>
+                Thanks geekhand. You have come to terms with my greatest
+                technical needs. Gracias!
+              </h2>
+              <img
+                class="testimonial-image"
+                src="images/lady-img.jpg"
+                class="d-block w-100"
+                alt="apple-img"
+              />
+              <em>Elizabeth, Lagos</em>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            data-bs-target="#testimonials"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            data-bs-target="#testimonials"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <!-- Press -->
 
+    <section id="press">
+      <div class="presses">
+        <img class="press-image" src="images/techcrunch.png" alt="tc-logo" />
+        <img class="press-image" src="images/tnw.png" alt="tnw-logo" />
+        <img
+          class="press-image"
+          src="images/bizinsider.png"
+          alt="biz-insider-logo"
+        />
+        <img
+          class="press-image"
+          src="images/mashable.png"
+          alt="mashable-logo"
+        />
+      </div>
+    </section>
 
-  <!-- Press -->
+    <!-- Pricing -->
 
-  <section id="press">
-    <div class="presses">
-      <img class="press-image" src="images/techcrunch.png" alt="tc-logo">
-      <img class="press-image" src="images/tnw.png" alt="tnw-logo">
-      <img class="press-image" src="images/bizinsider.png" alt="biz-insider-logo">
-      <img class="press-image" src="images/mashable.png" alt="mashable-logo">
+    <section id="news">
+      <div class="news1">
+        <div class="card">
+          <h3>Our Newsletter</h3>
+          <form onclick="return false;">
+            <div class="inputbox">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                required="required"
+              />
+              <span>Full Name</span>
+            </div>
+            <div class="inputbox">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                required="required"
+              />
+              <span>Email</span>
+            </div>
+            <div class="inputbox">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                required="required"
+              />
+              <span>Phone</span>
+            </div>
+            <button class="btn btn-danger btn-block">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- Call to Action -->
 
+    <section id="cta">
+      <div class="downloads">
+        <h4 class="download-title">Get across to us on your phone now.</h4>
+        <!-- Call Feature -->
 
-  </section>
+        <!-- Call Feature -->
+        <button type="button" class="btn btn-dark btn-lg download-button2">
+          <!-- href="tel:+1-578-649-1542 -->
+          <a
+            href="tel:+234-903-649-3451"
+            style="color: #fff; text-decoration: none"
+            ><i class="fa-solid fa-phone"></i> Call now</a
+          >
+        </button>
+        <button type="button" class="btn btn-light btn-lg download-button2">
+          <i class="fa-solid fa-comment"></i> Text now
+        </button>
+      </div>
+    </section>
 
+    <!-- Footer -->
 
-  <!-- Pricing -->
-
-  <section id="news">
-
-    <div class="news1">
-      <div class="card">
-        <h3>Our Newsletter</h3>
-        <form onclick="return false;">
-            <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"> <span>Full Name</span> </div>
-            <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"> <span>Email</span> </div>
-            <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"> <span>Phone</span> </div> <button class="btn btn-danger btn-block">Send</button>
-        </form>
-    </div>
-
-  </div>
-
-  </section>
-
-
-  <!-- Call to Action -->
-
-  <section id="cta">
-
-    <div class="downloads">
-
-      <h4 class="download-title">Get across to us on your phone now.</h4>
-       
-      <button type="button" class="btn btn-dark btn-lg download-button2"><i class="fa-solid fa-phone"></i> Call now </button>
-      <button type="button" class="btn btn-light btn-lg download-button2"><i class="fa-solid fa-comment"></i> Text now </button>  
-
-    </div>
-
-
-  </section>
-
-
-  <!-- Footer -->
-
-  <footer id="footer">
-
-    <div class="foot">
-    <p>© Copyright geekhand 2022</p>
-    </div>
-
-
-  </footer>
-
-
-</body>
-
+    <footer id="footer">
+      <div class="foot">
+        <p>© Copyright geekhand 2022</p>
+      </div>
+    </footer>
+  </body>
 </html>
