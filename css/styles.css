@@ -133,8 +133,8 @@ p {
 }
 
 .news1 {
-  padding-top: 7%;
-  height: 50vh;
+  padding: 7% 15%;
+  height: 400px;
   text-align: center;
   background: white;
 }
@@ -251,7 +251,7 @@ button:hover {
 
 .container-contact2 {
   width: 100%;
-  min-height: 50vh;
+  min-height: 500px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
