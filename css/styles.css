@@ -360,6 +360,7 @@ button:hover {
   font-family: Poppins-Regular;
   font-size: 13px;
   color: #999999;
+  opacity: .4;
   line-height: 1.2;
 
   -webkit-transition: all 0.4s;
