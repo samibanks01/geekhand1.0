@@ -162,13 +162,6 @@ p {
   margin: 7px 15px 7px 0px;
 }
 
-.download-button3 {
-  font-size: 28px;
-  border-radius: 10px;
-  width: 20%;
-  margin: 7px 15px;
-}
-
 .foot {
   text-align: center;
 }
@@ -195,10 +188,14 @@ p {
   }
 }
 
+label {
+  color: #999999;
+}
+
 /*---------------------------------------------*/
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
@@ -233,9 +230,9 @@ textarea:-ms-input-placeholder { color: #999999; }
 /*---------------------------------------------*/
 
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
