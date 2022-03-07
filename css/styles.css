@@ -164,6 +164,7 @@ p {
 
 .foot {
   text-align: center;
+  padding-top: 10px;
 }
 
 @media (max-width: 1028px) {
