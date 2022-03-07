@@ -140,8 +140,7 @@ p {
 }
 
 .news2 {
-  padding-left: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .downloads {
@@ -190,7 +189,10 @@ p {
   .title-image {
     padding 0 20%;
   }
-
+  
+  .wrap-contact2 {
+    padding: 72px 15px 90px 15px;
+  }
 }
 
 /*---------------------------------------------*/
@@ -269,7 +271,7 @@ button:hover {
 }
 
 .wrap-contact2 {
-  width: 790px;
+  width: 60%;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
