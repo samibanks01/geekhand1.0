@@ -38,7 +38,7 @@ const url = "https://us14.api.mailchimp.com/3.0/lists/cc1ca74db5";
   // console.log(firstName, lastName, email);
 const options = {
   method: "POST",
-  auth: "angela1:cd04344df9e24924554c67ee953c8f59-us14"
+  auth: "angela1:{mailchimpapi}"
 }
 
 const request = https.request(url, options, function(response) {
