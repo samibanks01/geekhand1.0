@@ -1,2 +1,2 @@
 # geekhand1.0
-first beta version of geekhand
+second beta version of geekhand
