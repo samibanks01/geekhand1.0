@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fifth, five, enlightment, wisdom on Geekhand</title>
+    <link>https://geekhand.org/tags/fifth-five-enlightment-wisdom/</link>
+    <description>Recent content in Fifth, five, enlightment, wisdom on Geekhand</description>
+    <image>
+      <title>Geekhand</title>
+      <url>https://github.com/Loop1337/geekhand1.0/assets/61188554/a8d34f1d-96b1-4d79-a34f-d880bf642ed8</url>
+      <link>https://github.com/Loop1337/geekhand1.0/assets/61188554/a8d34f1d-96b1-4d79-a34f-d880bf642ed8</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Aug 2023 09:15:06 -0400</lastBuildDate><atom:link href="https://geekhand.org/tags/fifth-five-enlightment-wisdom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numero Cinque</title>
+      <link>https://geekhand.org/posts/numero-cinque/</link>
+      <pubDate>Wed, 02 Aug 2023 09:15:06 -0400</pubDate>
+      
+      <guid>https://geekhand.org/posts/numero-cinque/</guid>
+      <description>Be the master of the mind, rather than being mastered by the mind.</description>
+    </item>
+    
+  </channel>
+</rss>
