@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>fourth, four, hackthebox, Learning on Geekhand</title>
+    <link>https://geekhand.org/tags/fourth-four-hackthebox-learning/</link>
+    <description>Recent content in fourth, four, hackthebox, Learning on Geekhand</description>
+    <image>
+      <title>Geekhand</title>
+      <url>https://github.com/Loop1337/geekhand1.0/assets/61188554/438fe5cb-e9e5-4351-9a93-0e0ee9b8dcb0</url>
+      <link>https://github.com/Loop1337/geekhand1.0/assets/61188554/438fe5cb-e9e5-4351-9a93-0e0ee9b8dcb0</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Aug 2023 08:11:32 -0400</lastBuildDate><atom:link href="https://geekhand.org/tags/fourth-four-hackthebox-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numero Quattro</title>
+      <link>https://geekhand.org/posts/numero-quattro/</link>
+      <pubDate>Wed, 02 Aug 2023 08:11:32 -0400</pubDate>
+      
+      <guid>https://geekhand.org/posts/numero-quattro/</guid>
+      <description>When the way comes to an end, you change direction. Having changed, you pass through.</description>
+    </item>
+    
+  </channel>
+</rss>

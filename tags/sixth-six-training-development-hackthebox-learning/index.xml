@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>sixth, six, training, development, hackthebox, Learning on Geekhand</title>
+    <link>https://geekhand.org/tags/sixth-six-training-development-hackthebox-learning/</link>
+    <description>Recent content in sixth, six, training, development, hackthebox, Learning on Geekhand</description>
+    <image>
+      <title>Geekhand</title>
+      <url>https://github.com/Loop1337/geekhand1.0/assets/61188554/438fe5cb-e9e5-4351-9a93-0e0ee9b8dcb0</url>
+      <link>https://github.com/Loop1337/geekhand1.0/assets/61188554/438fe5cb-e9e5-4351-9a93-0e0ee9b8dcb0</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Aug 2023 14:12:38 -0400</lastBuildDate><atom:link href="https://geekhand.org/tags/sixth-six-training-development-hackthebox-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numero Sel</title>
+      <link>https://geekhand.org/posts/numero-sel/</link>
+      <pubDate>Wed, 02 Aug 2023 14:12:38 -0400</pubDate>
+      
+      <guid>https://geekhand.org/posts/numero-sel/</guid>
+      <description>We think in Generality. But we live in detail.</description>
+    </item>
+    
+  </channel>
+</rss>
