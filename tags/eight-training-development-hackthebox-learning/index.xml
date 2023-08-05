@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>eight, training, development, hackthebox, Learning on Geekhand</title>
+    <link>https://geekhand.org/tags/eight-training-development-hackthebox-learning/</link>
+    <description>Recent content in eight, training, development, hackthebox, Learning on Geekhand</description>
+    <image>
+      <title>Geekhand</title>
+      <url>https://github.com/Loop1337/geekhand1.0/assets/61188554/2dd81db8-2dda-4eb3-9a33-84e0b5730b1e</url>
+      <link>https://github.com/Loop1337/geekhand1.0/assets/61188554/2dd81db8-2dda-4eb3-9a33-84e0b5730b1e</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Aug 2023 01:06:24 -0400</lastBuildDate><atom:link href="https://geekhand.org/tags/eight-training-development-hackthebox-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numero Otto</title>
+      <link>https://geekhand.org/posts/numero-otto/</link>
+      <pubDate>Thu, 03 Aug 2023 01:06:24 -0400</pubDate>
+      
+      <guid>https://geekhand.org/posts/numero-otto/</guid>
+      <description>I&amp;#39;m not young enough to know everything.</description>
+    </item>
+    
+  </channel>
+</rss>
