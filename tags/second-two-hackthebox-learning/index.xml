@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Second, Two, hackthebox, Learning on Geekhand</title>
+    <link>https://geekhand.org/tags/second-two-hackthebox-learning/</link>
+    <description>Recent content in Second, Two, hackthebox, Learning on Geekhand</description>
+    <image>
+      <title>Geekhand</title>
+      <url>https://github.com/Loop1337/geekhand1.0/assets/61188554/2dd81db8-2dda-4eb3-9a33-84e0b5730b1e</url>
+      <link>https://github.com/Loop1337/geekhand1.0/assets/61188554/2dd81db8-2dda-4eb3-9a33-84e0b5730b1e</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Jul 2023 22:14:51 -0400</lastBuildDate><atom:link href="https://geekhand.org/tags/second-two-hackthebox-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numero Due</title>
+      <link>https://geekhand.org/posts/numero-due/</link>
+      <pubDate>Mon, 31 Jul 2023 22:14:51 -0400</pubDate>
+      
+      <guid>https://geekhand.org/posts/numero-due/</guid>
+      <description>Teach us to delight in simple things, and mirth that has no bitter springs.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,413 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Numero Tredici | Geekhand</title>
+<meta name=keywords content="training,development,hackthebox,Learning">
+<meta name=description content="If you want the kernel, you must break the shell.">
+<meta name=author content="El Osas Crowther">
+<link rel=canonical href=https://geekhand.org/posts/numero-tredici/>
+<meta name=google-site-verification content="G-JRQB9L7DNM">
+<meta name=yandex-verification content="XYZabc">
+<meta name=msvalidate.01 content="XYZabc">
+<link crossorigin=anonymous href=/assets/css/stylesheet.3613efbd0b1772781e8f49935e973cae632a7f61471c05b17be155505ccf87b5.css integrity="sha256-NhPvvQsXcngej0mTXpc8rmMqf2FHHAWxe+FVUFzPh7U=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=#ZgotmplZ>
+<link rel=icon type=image/png sizes=16x16 href=#ZgotmplZ>
+<link rel=icon type=image/png sizes=32x32 href=#ZgotmplZ>
+<link rel=apple-touch-icon href=#ZgotmplZ>
+<link rel=mask-icon href=https://geekhand.org/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JRQB9L7DNM"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-JRQB9L7DNM',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="Numero Tredici">
+<meta property="og:description" content="If you want the kernel, you must break the shell.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://geekhand.org/posts/numero-tredici/">
+<meta property="og:image" content="https://github.com/Loop1337/geekhand1.0/assets/61188554/a8516209-5211-4851-8e25-bcf7b77738ba"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-08-07T22:42:29-04:00">
+<meta property="article:modified_time" content="2023-08-07T22:42:29-04:00"><meta property="og:site_name" content="Geekhand">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://github.com/Loop1337/geekhand1.0/assets/61188554/a8516209-5211-4851-8e25-bcf7b77738ba">
+<meta name=twitter:title content="Numero Tredici">
+<meta name=twitter:description content="If you want the kernel, you must break the shell.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://geekhand.org/posts/"},{"@type":"ListItem","position":2,"name":"Numero Tredici","item":"https://geekhand.org/posts/numero-tredici/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Numero Tredici","name":"Numero Tredici","description":"If you want the kernel, you must break the shell.","keywords":["training, development, hackthebox, Learning"],"articleBody":"CPTS N0T3S 7. This is the next phase from the earlier documentation of my Hackthbox CPTS course.\nDomain Name System (DNS) Domain Name System (DNS) is a system for resolving computer names into IP addresses, and it does not have a central database. Globally distributed DNS servers translate domain names into IP addresses and thus control which server a user can reach via a particular domain.\nThere are several types of DNS servers that are used worldwide:\n DNS root server Authoritative name server Non-authoritative name server Caching server Forwarding server Resolver     Server Type Description     DNS Root Server The root servers of the DNS are responsible for the top-level domains (TLD).    As the last instance, they are only requested if the name server does not respond. Thus,    a root server is a central interface between users and content on the Internet,    as it links domain and IP address. The Internet Corporation for Assigned Names and Numbers    (ICANN) coordinates the work of the root name servers. There are 13 such root    servers around the globe.   Authoritative Nameserver Authoritative name servers hold authority for a particular zone.    They only answer queries from their area of responsibility,    and their information is binding. If an authoritative name server cannot answer    a client’s query, the root name server takes over at that point.   Non-authoritative Nameserver Non-authoritative name servers are not responsible    for a particular DNS zone. Instead, they collect information on specific    DNS zones themselves, which is done using recursive or iterative DNS querying.   Caching DNS Server Caching DNS servers cache information from other name servers    for a specified period. The authoritative name server determines    the duration of this storage.   Forwarding Server Forwarding servers perform only one function: they forward    DNS queries to another DNS server.   Resolver Resolvers are not authoritative DNS servers but perform name    resolution locally in the computer or router.    By default, IT security professionals apply DNS over TLS (DoT) or DNS over HTTPS (DoH) here. In addition, the network protocol NSCrypt also encrypts the traffic between the computer and the name server\nDifferent DNS records are used for the DNS queries, which all have various tasks. Moreover, separate entries exist for different functions since we can set up mail servers and other servers for a domain.\n   DNS Record Description     A Returns an IPv4 address of the requested domain as a result.   AAAA Returns an IPv6 address of the requested domain.   MX Returns the responsible mail servers as a result.   NS Returns the DNS servers (nameservers) of the domain.   TXT This record can contain various information. The all-rounder can be used, e.g.,    to validate the Google Search Console or validate SSL certificates.    In addition, SPF and DMARC entries are set to validate mail traffic    and protect it from spam.   CNAME This record serves as an alias. If the domain www.hackthebox.eu should    point to the same IP, and we create an A record for one and a CNAME record for the other.   PTR The PTR record works the other way around (reverse lookup). It converts    IP addresses into valid domain names.   SOA Provides information about the corresponding DNS zone and email address    of the administrative contact.    The SOA record is located in a domain’s zone file and specifies who is responsible for the operation of the domain and how DNS information for the domain is managed\n dig soa www.inlanefreight.com\n The dot (.) is replaced by an at sign (@) in the email address. In this example, the email address of the administrator is awsdns-hostmaster@amazon.com.\nDefault Configuration There are many different configuration types for DNS. All DNS servers work with three different types of configuration files:\n local DNS configuration files zone files reverse name resolution files  The DNS server Bind9 is very often used on Linux-based distributions. Its local configuration file (named.conf) is roughly divided into two sections, firstly the options section for general settings and secondly the zone entries for the individual domains. The local configuration files are usually:\n named.conf.local named.conf.options named.conf.log  It contains the associated RFC where we can customize the server to our needs and our domain structure with the individual zones for different domains. The configuration file named.conf is divided into several options that control the behavior of the name server. A distinction is made between global options and zone options. Global options are general and affect all zones. A zone option only affects the zone to which it is assigned. Options not listed in named.conf have default values. If an option is both global and zone-specific, then the zone option takes precedence.\nLocal DNS Configuration A zone file is a text file that describes a DNS zone with the BIND file format. In other words it is a point of delegation in the DNS tree. The BIND file format is the industry-preferred zone file format and is now well established in DNS server software. A zone file describes a zone completely. There must be precisely one SOA record and at least one NS record. The SOA resource record is usually located at the beginning of a zone file.\nThe main goal of these global rules is to improve the readability of zone files. A syntax error usually results in the entire zone file being considered unusable. The name server behaves similarly as if this zone did not exist. It responds to DNS queries with a SERVFAIL error message.In short, here, all forward records are entered according to the BIND format. This allows the DNS server to identify which domain, hostname, and role the IP addresses belong to. In simple terms, this is the phone book where the DNS server looks up the addresses for the domains it is searching for.\nDangerous Settings    Option Description     allow-query Defines which hosts are allowed to send requests to the DNS server.   allow-recursion Defines which hosts are allowed to send recursive requests to the DNS server.   allow-transfer Defines which hosts are allowed to receive zone transfers from the DNS server.   zone-statistics Collects statistical data of zones.    Footprinting the Service The footprinting at DNS servers is done as a result of the requests we send. So, first of all, the DNS server can be queried as to which other name servers are known.\nDIG - NS Query  dig ns inlanefreight.htb @10.129.14.128\n Sometimes it is also possible to query a DNS server’s version using a class CHAOS query and type TXT. However, this entry must exist on the DNS server. For this, we could use the following command:\n dig CH TXT version.bind 10.129.120.85\n We can use the option ANY to view all available records. This will cause the server to show us all available entries that it is willing to disclose. It is important to note that not all entries from the zones will be shown.\n dig any inlanefreight.htb @10.129.14.128\n Zone transfer refers to the transfer of zones to another server in DNS, which generally happens over TCP port 53. Zone transfer involves the mere transfer of files or records and the detection of discrepancies in the data sets of the servers involved.A primary is always a master, while a secondary can be both a slave and a master.\nThe slave fetches the SOA record of the relevant zone from the master at certain intervals, the so-called refresh time, usually one hour, and compares the serial numbers. If the serial number of the SOA record of the master is greater than that of the slave, the data sets no longer match.\n dig axfr inlanefreight.htb @10.129.14.128\n If the administrator used a subnet for the allow-transfer option for testing purposes or as a workaround solution or set it to any, everyone would query the entire zone file at the DNS server. In addition, other zones can be queried, which may even show internal IP addresses and hostnames.\n dig axfr internal.inlanefreight.htb @10.129.14.128\n Subdomain Brute Forcing  for sub in $(cat /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-110000.txt);do dig $sub.inlanefreight.htb @10.129.14.128 | grep -v ‘;|SOA’ | sed -r ‘/^\\s*$/d’ | grep $sub | tee -a subdomains.txt;done\n  dnsenum –dnsserver 10.129.14.128 –enum -p 0 -s 0 -o subdomains.txt -f /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-110000.txt inlanefreight.htb\n … See you stargazer on the next phase.\nFor the enlightened, there can be no denial of self. Speak, Live and rejoice as you have received the liberation of your consciousness.\n","wordCount":"1362","inLanguage":"en","image":"https://github.com/Loop1337/geekhand1.0/assets/61188554/a8516209-5211-4851-8e25-bcf7b77738ba","datePublished":"2023-08-07T22:42:29-04:00","dateModified":"2023-08-07T22:42:29-04:00","author":{"@type":"Person","name":"El Osas Crowther"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://geekhand.org/posts/numero-tredici/"},"publisher":{"@type":"Organization","name":"Geekhand","logo":{"@type":"ImageObject","url":"![geekhand](https://github.com/Loop1337/geekhand1.0/assets/61188554/ee4e6aa0-032e-4e18-936c-d89d9398125d)"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://geekhand.org/ accesskey=h title="Geekhand (Alt + H)">
+<img src=https://github.com/Loop1337/geekhand1.0/assets/61188554/a2f23003-1a7e-4aed-a4aa-bd69ae6ac75d alt aria-label=logo height=35>Geekhand</a>
+<div class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</div>
+</div>
+<ul id=menu>
+<li>
+<a href=https://geekhand.org/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://geekhand.org/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=https://geekhand.org/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://geekhand.org/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://geekhand.org/>Home</a>&nbsp;»&nbsp;<a href=https://geekhand.org/posts/>Posts</a></div>
+<h1 class=post-title>
+Numero Tredici
+</h1>
+<div class=post-description>
+If you want the kernel, you must break the shell.
+</div>
+<div class=post-meta><span title="2023-08-07 22:42:29 -0400 EDT">August 7, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1362 words&nbsp;·&nbsp;El Osas Crowther&nbsp;|&nbsp;<a href=https://github.com/Loop1337/geekhand1.0/content/posts/numero-tredici.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div>
+</header> <div class=toc>
+<details>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>Table of Contents</span>
+</summary>
+<div class=inner><nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#cpts-n0t3s-7>CPTS N0T3S 7.</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</details>
+</div>
+<div class=post-content><h3 id=cpts-n0t3s-7>CPTS N0T3S 7.<a hidden class=anchor aria-hidden=true href=#cpts-n0t3s-7>#</a></h3>
+<p>This is the next phase from the earlier documentation of my Hackthbox CPTS course.</p>
+<h4 id=domain-name-system-dns>Domain Name System (DNS)<a hidden class=anchor aria-hidden=true href=#domain-name-system-dns>#</a></h4>
+<p>Domain Name System (DNS) is a system for resolving computer names into IP addresses,
+and it does not have a central database. Globally distributed DNS servers translate domain names into IP addresses and thus control which server a user can reach via a particular domain.</p>
+<p><img loading=lazy src=https://github.com/Loop1337/geekhand1.0/assets/61188554/f3646998-e987-4a27-aa5e-180ef036ee6d alt="blue team htb">
+</p>
+<p>There are several types of DNS servers that are used worldwide:</p>
+<ul>
+<li>DNS root server</li>
+<li>Authoritative name server</li>
+<li>Non-authoritative name server</li>
+<li>Caching server</li>
+<li>Forwarding server</li>
+<li>Resolver</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Server Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DNS Root Server</td>
+<td>The root servers of the DNS are responsible for the top-level domains (TLD).</td>
+</tr>
+<tr>
+<td></td>
+<td>As the last instance, they are only requested if the name server does not respond. Thus,</td>
+</tr>
+<tr>
+<td></td>
+<td>a root server is a central interface between users and content on the Internet,</td>
+</tr>
+<tr>
+<td></td>
+<td>as it links domain and IP address. The Internet Corporation for Assigned Names and Numbers</td>
+</tr>
+<tr>
+<td></td>
+<td>(ICANN) coordinates the work of the root name servers. There are 13 such root</td>
+</tr>
+<tr>
+<td></td>
+<td>servers around the globe.</td>
+</tr>
+<tr>
+<td>Authoritative Nameserver</td>
+<td>Authoritative name servers hold authority for a particular zone.</td>
+</tr>
+<tr>
+<td></td>
+<td>They only answer queries from their area of responsibility,</td>
+</tr>
+<tr>
+<td></td>
+<td>and their information is binding. If an authoritative name server cannot answer</td>
+</tr>
+<tr>
+<td></td>
+<td>a client&rsquo;s query, the root name server takes over at that point.</td>
+</tr>
+<tr>
+<td>Non-authoritative Nameserver</td>
+<td>Non-authoritative name servers are not responsible</td>
+</tr>
+<tr>
+<td></td>
+<td>for a particular DNS zone. Instead, they collect information on specific</td>
+</tr>
+<tr>
+<td></td>
+<td>DNS zones themselves, which is done using recursive or iterative DNS querying.</td>
+</tr>
+<tr>
+<td>Caching DNS Server</td>
+<td>Caching DNS servers cache information from other name servers</td>
+</tr>
+<tr>
+<td></td>
+<td>for a specified period. The authoritative name server determines</td>
+</tr>
+<tr>
+<td></td>
+<td>the duration of this storage.</td>
+</tr>
+<tr>
+<td>Forwarding Server</td>
+<td>Forwarding servers perform only one function: they forward</td>
+</tr>
+<tr>
+<td></td>
+<td>DNS queries to another DNS server.</td>
+</tr>
+<tr>
+<td>Resolver</td>
+<td>Resolvers are not authoritative DNS servers but perform name</td>
+</tr>
+<tr>
+<td></td>
+<td>resolution locally in the computer or router.</td>
+</tr>
+</tbody>
+</table>
+<p>By default, IT security professionals apply DNS over TLS (DoT) or DNS over HTTPS (DoH) here. In addition, the network protocol NSCrypt also encrypts the traffic between the computer and the name server</p>
+<p>Different DNS records are used for the DNS queries, which all have various tasks. Moreover, separate entries exist for different functions since we can set up mail servers and other servers for a domain.</p>
+<table>
+<thead>
+<tr>
+<th>DNS Record</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Returns an IPv4 address of the requested domain as a result.</td>
+</tr>
+<tr>
+<td>AAAA</td>
+<td>Returns an IPv6 address of the requested domain.</td>
+</tr>
+<tr>
+<td>MX</td>
+<td>Returns the responsible mail servers as a result.</td>
+</tr>
+<tr>
+<td>NS</td>
+<td>Returns the DNS servers (nameservers) of the domain.</td>
+</tr>
+<tr>
+<td>TXT</td>
+<td>This record can contain various information. The all-rounder can be used, e.g.,</td>
+</tr>
+<tr>
+<td></td>
+<td>to validate the Google Search Console or validate SSL certificates.</td>
+</tr>
+<tr>
+<td></td>
+<td>In addition, SPF and DMARC entries are set to validate mail traffic</td>
+</tr>
+<tr>
+<td></td>
+<td>and protect it from spam.</td>
+</tr>
+<tr>
+<td>CNAME</td>
+<td>This record serves as an alias. If the domain <a href=http://www.hackthebox.eu>www.hackthebox.eu</a> should</td>
+</tr>
+<tr>
+<td></td>
+<td>point to the same IP, and we create an A record for one and a CNAME record for the other.</td>
+</tr>
+<tr>
+<td>PTR</td>
+<td>The PTR record works the other way around (reverse lookup). It converts</td>
+</tr>
+<tr>
+<td></td>
+<td>IP addresses into valid domain names.</td>
+</tr>
+<tr>
+<td>SOA</td>
+<td>Provides information about the corresponding DNS zone and email address</td>
+</tr>
+<tr>
+<td></td>
+<td>of the administrative contact.</td>
+</tr>
+</tbody>
+</table>
+<p>The SOA record is located in a domain&rsquo;s zone file and specifies who is responsible for the operation of the domain and how DNS information for the domain is managed</p>
+<blockquote>
+<p>dig soa <a href=http://www.inlanefreight.com>www.inlanefreight.com</a></p>
+</blockquote>
+<p>The dot (.) is replaced by an at sign (@) in the email address. In this example, the email address of the administrator is <a href=mailto:awsdns-hostmaster@amazon.com>awsdns-hostmaster@amazon.com</a>.</p>
+<h4 id=default-configuration>Default Configuration<a hidden class=anchor aria-hidden=true href=#default-configuration>#</a></h4>
+<p>There are many different configuration types for DNS. All DNS servers work with three
+different types of configuration files:</p>
+<ul>
+<li>local DNS configuration files</li>
+<li>zone files</li>
+<li>reverse name resolution files</li>
+</ul>
+<p>The DNS server Bind9 is very often used on Linux-based distributions. Its local configuration file (named.conf) is roughly divided into two sections, firstly the options section for general settings and secondly the zone entries for the individual domains. The local configuration files are usually:</p>
+<ul>
+<li>named.conf.local</li>
+<li>named.conf.options</li>
+<li>named.conf.log</li>
+</ul>
+<p>It contains the associated RFC where we can customize the server to our needs and our domain structure with the individual zones for different domains.
+The configuration file named.conf is divided into several options that control the behavior of the name server.
+A distinction is made between global options and zone options. Global options are general and affect all zones. A zone option only affects the zone to which it is assigned. Options not listed in named.conf have default values. If an option is both global and zone-specific, then the zone option takes precedence.</p>
+<h4 id=local-dns-configuration>Local DNS Configuration<a hidden class=anchor aria-hidden=true href=#local-dns-configuration>#</a></h4>
+<p>A zone file is a text file that describes a DNS zone with the BIND file format. In other words it is a point of delegation in the DNS tree. The BIND file format is the industry-preferred zone file format and is now well established in DNS server software. A zone file describes a zone completely.
+There must be precisely one SOA record and at least one NS record. The SOA resource record is usually located at the beginning of a zone file.</p>
+<p>The main goal of these global rules is to improve the readability of zone files. A syntax error usually results in the entire zone file being considered unusable. The name server behaves similarly as if this zone did not exist. It responds to DNS queries with a SERVFAIL error message.In short, here, all forward records are entered according to the BIND format. This allows the DNS server to identify which domain, hostname, and role the IP addresses belong to. In simple terms, this is the phone book where the DNS server looks up the addresses for the domains it is searching for.</p>
+<h4 id=dangerous-settings>Dangerous Settings<a hidden class=anchor aria-hidden=true href=#dangerous-settings>#</a></h4>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>allow-query</td>
+<td>Defines which hosts are allowed to send requests to the DNS server.</td>
+</tr>
+<tr>
+<td>allow-recursion</td>
+<td>Defines which hosts are allowed to send recursive requests to the DNS server.</td>
+</tr>
+<tr>
+<td>allow-transfer</td>
+<td>Defines which hosts are allowed to receive zone transfers from the DNS server.</td>
+</tr>
+<tr>
+<td>zone-statistics</td>
+<td>Collects statistical data of zones.</td>
+</tr>
+</tbody>
+</table>
+<h4 id=footprinting-the-service>Footprinting the Service<a hidden class=anchor aria-hidden=true href=#footprinting-the-service>#</a></h4>
+<p>The footprinting at DNS servers is done as a result of the requests we send. So, first of all, the DNS server can be queried as to which other name servers are known.</p>
+<h4 id=dig---ns-query>DIG - NS Query<a hidden class=anchor aria-hidden=true href=#dig---ns-query>#</a></h4>
+<blockquote>
+<p>dig ns inlanefreight.htb @10.129.14.128</p>
+</blockquote>
+<p>Sometimes it is also possible to query a DNS server&rsquo;s version using a class CHAOS query and type TXT.
+However, this entry must exist on the DNS server. For this, we could use the following command:</p>
+<blockquote>
+<p>dig CH TXT version.bind 10.129.120.85</p>
+</blockquote>
+<p>We can use the option ANY to view all available records. This will cause the server to show us all
+available entries that it is willing to disclose. It is important to note that not all entries from the zones will be shown.</p>
+<blockquote>
+<p>dig any inlanefreight.htb @10.129.14.128</p>
+</blockquote>
+<p>Zone transfer refers to the transfer of zones to another server in DNS, which generally happens over TCP port 53. Zone transfer involves the mere transfer of files or records and the detection of discrepancies in the data sets of the servers involved.A primary is always a master, while a secondary can be both a slave and a master.</p>
+<p>The slave fetches the SOA record of the relevant zone from the master at certain intervals, the so-called refresh time, usually one hour, and compares the serial numbers. If the serial number of the SOA record of the master is greater than that of the slave, the data sets no longer match.</p>
+<blockquote>
+<p>dig axfr inlanefreight.htb @10.129.14.128</p>
+</blockquote>
+<p>If the administrator used a subnet for the allow-transfer option for testing purposes or as a workaround solution or set it to any, everyone would query the entire zone file at the DNS server.
+In addition, other zones can be queried, which may even show internal IP addresses and hostnames.</p>
+<blockquote>
+<p>dig axfr internal.inlanefreight.htb @10.129.14.128</p>
+</blockquote>
+<h4 id=subdomain-brute-forcing>Subdomain Brute Forcing<a hidden class=anchor aria-hidden=true href=#subdomain-brute-forcing>#</a></h4>
+<blockquote>
+<p>for sub in $(cat /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-110000.txt);do dig $sub.inlanefreight.htb @10.129.14.128 | grep -v &lsquo;;|SOA&rsquo; | sed -r &lsquo;/^\s*$/d&rsquo; | grep $sub | tee -a subdomains.txt;done</p>
+</blockquote>
+<blockquote>
+<p>dnsenum &ndash;dnsserver 10.129.14.128 &ndash;enum -p 0 -s 0 -o subdomains.txt -f /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-110000.txt inlanefreight.htb</p>
+</blockquote>
+<p>&mldr; See you stargazer on the next phase.</p>
+<p>For the enlightened, there can be no denial of self. Speak, Live and rejoice as you have received the liberation of your consciousness.</p>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://geekhand.org/tags/training-development-hackthebox-learning/>training, development, hackthebox, Learning</a></li>
+</ul>
+<nav class=paginav>
+<a class=prev href=https://geekhand.org/posts/numero-dodici/>
+<span class=title>« Prev</span>
+<br>
+<span>Numero Dodici</span>
+</a>
+</nav>
+<div class=share-buttons>
+<a target=_blank rel="noopener noreferrer" aria-label="share Numero Tredici on twitter" href="https://twitter.com/intent/tweet/?text=Numero%20Tredici&url=https%3a%2f%2fgeekhand.org%2fposts%2fnumero-tredici%2f&hashtags=training%2cdevelopment%2chackthebox%2cLearning"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Numero Tredici on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fgeekhand.org%2fposts%2fnumero-tredici%2f&title=Numero%20Tredici&summary=Numero%20Tredici&source=https%3a%2f%2fgeekhand.org%2fposts%2fnumero-tredici%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Numero Tredici on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fgeekhand.org%2fposts%2fnumero-tredici%2f&title=Numero%20Tredici"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Numero Tredici on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fgeekhand.org%2fposts%2fnumero-tredici%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Numero Tredici on whatsapp" href="https://api.whatsapp.com/send?text=Numero%20Tredici%20-%20https%3a%2f%2fgeekhand.org%2fposts%2fnumero-tredici%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Numero Tredici on telegram" href="https://telegram.me/share/url?text=Numero%20Tredici&url=https%3a%2f%2fgeekhand.org%2fposts%2fnumero-tredici%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg>
+</a>
+</div>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2023 <a href=https://geekhand.org/>Geekhand</a></span>
+<span>
+Powered by
+<a href=https://sambanjo.com/ rel="noopener noreferrer" target=_blank>SamBanjo</a> &
+        <a href=https://github.com/Loop1337/geekhand1.0 rel=noopener target=_blank>Github</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>
